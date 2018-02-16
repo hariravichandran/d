@@ -1,0 +1,88 @@
+--[Case 1: Given Test Case]--
+['./src/donor.py', './input/itcont.txt', './input/percentile.txt', './output/repeat_donors.txt']
+Begin Time: 2018-02-15 17:56:18.576389
+percentile: 30
+Different Year -- Unique Donor: 02895 ABBOTT, JOSEPH , Years Donated: ['2017', '2018']
+Year: 2018, Year of Interest: 2018
+Matched! - Year: 2018, Year of Interest: 2018
+Different Year -- Unique Donor: 02895 SABOURIN, JAMES , Years Donated: ['2017', '2018']
+Year: 2018, Year of Interest: 2018
+Matched! - Year: 2018, Year of Interest: 2018
+Filename: ./input/itcont.txt , Lines Processed: 7
+            Repeat Donor  Status
+0   02895 ABBOTT, JOSEPH    True
+1  02895 SABOURIN, JAMES    True
+                Unique Donor         Years
+0    30004 DEEHAN, WILLIAM N        [2017]
+1       02895 ABBOTT, JOSEPH  [2017, 2018]
+2      02895 SABOURIN, JAMES  [2017, 2018]
+3  30750 JEROME, CHRISTOPHER        [2017]
+  Invalid Column  Count
+0                     6
+1       other_id      1
+   Year  Count
+0  2017      4
+1  2018      2
+Number of Valid Records: 6
+Number of Rows Written: 2
+End Time: 2018-02-15 17:56:18.597314
+Elapsed Time: 0:00:00.020925
+--[Case 2: Invalid and Valid Records]--
+['./src/donor.py', './input/invalid.txt', './input/percentile.txt', './output/repeat_donors_invalid.txt']
+Begin Time: 2018-02-15 17:56:19.523234
+percentile: 30
+Different Year -- Unique Donor: 02895 ABBOTT, JOSEPH , Years Donated: ['2017', '2018']
+Year: 2018, Year of Interest: 2018
+Matched! - Year: 2018, Year of Interest: 2018
+Different Year -- Unique Donor: 02895 SABOURIN, JAMES , Years Donated: ['2017', '2018']
+Year: 2018, Year of Interest: 2018
+Matched! - Year: 2018, Year of Interest: 2018
+Filename: ./input/invalid.txt , Lines Processed: 16
+            Repeat Donor  Status
+0   02895 ABBOTT, JOSEPH    True
+1  02895 SABOURIN, JAMES    True
+                Unique Donor         Years
+0    30004 DEEHAN, WILLIAM N        [2017]
+1       02895 ABBOTT, JOSEPH  [2017, 2018]
+2      02895 SABOURIN, JAMES  [2017, 2018]
+3  30750 JEROME, CHRISTOPHER        [2017]
+  Invalid Column  Count
+0                     6
+1       other_id      2
+2           name      2
+3         t_date      2
+4      committee      2
+5      zip_code5      1
+6       t_amount      1
+   Year  Count
+0  2017      4
+1  2018      2
+Number of Valid Records: 6
+Number of Rows Written: 2
+End Time: 2018-02-15 17:56:19.549937
+Elapsed Time: 0:00:00.026703
+--[Case 3: Invalid Records Only]--
+['./src/donor.py', './input/invalid_only.txt', './input/percentile.txt', './output/repeat_donors_invalid_only.txt']
+Begin Time: 2018-02-15 17:56:20.466602
+percentile: 30
+Filename: ./input/invalid_only.txt , Lines Processed: 8
+Empty DataFrame
+Columns: [Repeat Donor, Status]
+Index: []
+Empty DataFrame
+Columns: [Unique Donor, Years]
+Index: []
+  Invalid Column  Count
+0       other_id      1
+1           name      2
+2         t_date      2
+3      committee      1
+4      zip_code5      1
+5       t_amount      1
+Empty DataFrame
+Columns: [Year, Count]
+Index: []
+Number of Valid Records: 0
+Number of Rows Written: 0
+End Time: 2018-02-15 17:56:20.484132
+Elapsed Time: 0:00:00.017530

@@ -1,0 +1,18 @@
+DN0a23752f:insight_testsuite ravichandran$ sh run_tests.sh 
+--[Case 1: Given Test Case]--
+['./src/donor.py', './input/itcont.txt', './input/percentile.txt', './output/repeat_donors.txt']
+Begin Time: 2018-02-15 18:44:58.453159
+percentile: 30
+Filename: ./input/itcont.txt , Lines Processed: 7
+  Invalid Column  Count
+0                     6
+1       other_id      1
+   Year  Count
+0  2017      4
+1  2018      2
+Number of Valid Records: 6
+Number of Rows Written: 2
+End Time: 2018-02-15 18:44:58.469588
+Elapsed Time: 0:00:00.016429
+-e [PASS]: test_1 repeat_donors.txt
+[Thu Feb 15 18:44:58 PST 2018] 1 of 1 tests passed

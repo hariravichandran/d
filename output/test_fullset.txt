@@ -1,0 +1,23 @@
+DN0a23752f:da ravichandran$ sh run.sh
+--[Case 5: indiv18.txt (All data from 2018 (Feb.))]--
+['./src/donor.py', './input/indiv18.txt', './input/percentile.txt', './output/indiv18_output.txt']
+Begin Time: 2018-02-15 18:15:23.967300
+percentile: 30
+Filename: ./input/indiv18.txt , Lines Processed: 7031510
+  Invalid Column    Count
+0                 3918681
+1      zip_code5     7493
+2           name     6633
+3       other_id  3098271
+4         t_date      432
+   Year    Count
+0  2007        1
+1  2015       38
+2  2012        3
+3  2017  3917557
+4  2016      935
+5  2018      147
+Number of Valid Records: 3918681
+Number of Rows Written: 67
+End Time: 2018-02-15 18:18:05.499170
+Elapsed Time: 0:02:41.531870

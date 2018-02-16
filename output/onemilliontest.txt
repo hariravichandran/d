@@ -1,0 +1,18 @@
+DN0a23752f:da ravichandran$ sh run.sh
+--[Case 4: itcont_2018_20171113_20180131.txt]--
+['./src/donor.py', './input/itcont_2018_20171113_20180131.txt', './input/percentile.txt', './output/itcont_2018_20171113_20180131_output.txt']
+Begin Time: 2018-02-15 18:06:38.390265
+percentile: 30
+Filename: ./input/itcont_2018_20171113_20180131.txt , Lines Processed: 1071945
+  Invalid Column   Count
+0                 769291
+1      zip_code5    2445
+2           name     939
+3       other_id  299270
+   Year   Count
+0  2017  769144
+1  2018     147
+Number of Valid Records: 769291
+Number of Rows Written: 15
+End Time: 2018-02-15 18:07:05.190544
+Elapsed Time: 0:00:26.800279
