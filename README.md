@@ -9,8 +9,7 @@
 8. [Scalabilty Test](README.md#scalability-test)
 
 # Introduction
-Python is selected as a programming language, and it uses the standard libraries such as datetime, pandas, and numpy. The python program donor.py calculates the percentile, total amount, and total count of repeat contributions from donors to recipients. The donors are uniquely identified by a combination of zip code, first name, and last name. Repeat Donations are identified by the zip code, committee ID, and year. This is a modified version of the Readme.md originally provided for the Insight Challenge.
-
+Python is selected as a programming language, and it uses the standard libraries such as datetime, pandas, and numpy. The python program donor.py calculates the percentile, total amount, and total count of repeat contributions from donors to recipients. The donors are uniquely identified by a combination of zip code, first name, and last name. Repeat Donations are identified by the zip code, committee ID, and year.
 # Program Approach
 This program uses data dictionaries to do its computations efficiently for large data sets. For the entire set, it took two minutes and 42 seconds to process the entire data set of 7 million records (2017 - 2018 FEC dataset) on a 2016 13" Macbook Pro. It calculates three values: total dollars received, total number of contributions received, and donation amount in a given percentile.
 
@@ -35,7 +34,7 @@ For the  output file that the program creates, `repeat_donors.txt`, the fields o
 The percentile computation was done by using a numpy module using the nearest-rank method.
 
 # Example
-Using the input files from the challenge (`percentile.txt` and `itcont.txt`, the program creates the expected output. 
+Using the input files (`percentile.txt` and `itcont.txt`), the program creates the expected output. 
 
 The program outputs the following `repeat_donors.txt` from the test cases in `itcont.txt`:
 
@@ -45,7 +44,7 @@ The program outputs the following `repeat_donors.txt` from the test cases in `it
 ## Unit Tests
 The program handles invalid data. This functionality has been tested with a special test file which includes all identified invalid test cases. The program successfully passed the tests. The program also passed the test case provided in `run_tests.sh`.
 
-No additional folders were generated under the Insight Test Suites folder. Rather, all the input files were kept in the original `input` file folder at the top level.
+No additional folders were generated under the Test Suites folder. Rather, all the input files were kept in the original `input` file folder at the top level.
 
 ##### Example Test Log
 ```
